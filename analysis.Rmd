@@ -1,0 +1,49 @@
+---
+title: "Women in STEM at UT"
+output: html_notebook
+---
+
+Using UT's Diversity tracker, we are able to display the relations of women in STEM fields at UT.
+
+We using `packrat` to keep track of the packages that were used to do this simple analysis.
+
+```{r}
+# install.packages('tidyverse') install tidyverse to do reading + ploting of data, etc.
+library(tidyverse)
+```
+
+```{r}
+enrollment.2016.fall <- read_csv('data/enrollment_fall_2016.csv')
+glimpse(enrollment.2016.fall)
+```
+
+We need to convert data to tidyset so that we can do some plotting with it.
+
+```{r}
+enrollment.2016.fall.tidy <- enrollment.2016.fall %>%
+  gather(Population.Type, Population, All.Total:Nonresident_alien.Women)
+```
+
+```{r}
+#install.packages("stringr")
+library(stringr)
+enrollment.2016.fall.tidyr <- enrollment.2016.fall.tidy %>%
+  mutate(Race = str_match(Population.Type, "(\\w+)\\.")[,2],
+         Gender = str_match(Population.Type, "\\.(\\w+)")[,2]) %>%
+  select(-Population.Type)
+```
+
+
+We'll start plotting the ratios of STEM fields at UT
+
+## Gender Ratio in STEM Fields at UT
+```{r}
+enrollment.2016.fall <- enrollment.2016.fall %>%
+  mutate(Percentage = sum(Female))
+```
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
