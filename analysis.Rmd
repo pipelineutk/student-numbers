@@ -13,35 +13,253 @@ library(tidyverse)
 ```
 
 ```{r}
-enrollment.2016.fall <- read_csv('data/enrollment_fall_2016.csv')
-glimpse(enrollment.2016.fall)
+enrollment.2016.fall.mf <- read_csv('data/stem_enrollment_male_female_fall_2016.csv')
+glimpse(enrollment.2016.fall.mf)
 ```
 
 We need to convert data to tidyset so that we can do some plotting with it.
 
 ```{r}
-enrollment.2016.fall.tidy <- enrollment.2016.fall %>%
-  gather(Population.Type, Population, All.Total:Nonresident_alien.Women)
+enrollment.2016.fall.mf.tidy <- enrollment.2016.fall.mf %>%
+  select(-Total) %>%
+  gather(key = "Gender", value = "Population", Male:Female)
+```
+
+
+```{r}
+stem_colors = c("Female" = "#754A7e", "Male" = "#2FBEBD", "Nonbinary" = "#58595B")
+
+enrollment.2016.fall.mf.stem.plot <- enrollment.2016.fall.mf.tidy %>%
+  select(Major,Population,Gender) %>%
+  group_by(Major) %>%
+    ggplot(data = ., aes(x = Major, y = Population, group = Gender, fill = Gender)) +
+  scale_fill_manual(values = stem_colors) +
+  geom_bar(
+    stat = "identity",
+    position = "dodge",
+    width = 1,
+    alpha = 1
+  ) +
+  ylab('Percentage') +
+  xlab('Major') +
+  scale_y_continuous(breaks = seq(0,1000, by = 200), limits = c(0,1000), expand = c(0, 0))+#scale_y_continuous(breaks = seq(0,600, by = 200), limits = c(0,600), expand = c(0, 0))+
+  #scale_x_continuous(breaks = seq(0,12, by = 3), limits = c(0,12.5), expand = c(0, 0))+
+  coord_flip()+
+  guides(col = guide_legend(nrow = 2)) +
+  theme(
+    panel.background = element_blank(),
+    panel.border = element_rect(color="black", size = 1, fill = NA),
+    axis.ticks.length = unit(-0.3, "lines"),
+    axis.text.y = element_text(color="black", size = 6*text_scaling, margin = margin(l = -7, r = 6, unit = "pt")),
+    axis.text.x = element_text(color="black", size = 10*text_scaling, margin = margin(t = 6, b = -7, unit = "pt")),
+    axis.title.y = element_text(color="black", size = 10*text_scaling, margin = margin(l = -1, r = 8, unit = "pt"), angle = 90),
+    axis.title.x = element_text(color="black", size = 10*text_scaling, margin = margin(t = 8, b = -1, unit = "pt")),
+    axis.ticks.y = element_line(color="black", size = 1),
+    axis.ticks.x = element_line(color="black", size = 1),
+    plot.margin = margin(t = 10, r = 12, b = 7, l = 7, unit = "pt"),
+    panel.grid.major.x = element_line(color="#eeeeee", size = 1),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    strip.text = element_text(color="black", size = 10*text_scaling),
+    strip.background = element_blank(),
+    legend.position = "bottom",
+    legend.text = element_text(color="black", size = 10*text_scaling),
+    legend.key.height = unit(12, "pt"),
+    legend.key.width = unit(16, "pt"),
+    legend.margin = margin(0, unit = "pt")
+  )
+enrollment.2016.fall.mf.stem.plot 
 ```
 
 ```{r}
-#install.packages("stringr")
-library(stringr)
-enrollment.2016.fall.tidyr <- enrollment.2016.fall.tidy %>%
-  mutate(Race = str_match(Population.Type, "(\\w+)\\.")[,2],
-         Gender = str_match(Population.Type, "\\.(\\w+)")[,2]) %>%
-  select(-Population.Type)
+ggsave(plot = enrollment.2016.fall.mf.stem.plot, filename = 'plots/enrollment.2016.fall.mf.stem.plot.svg', width = 4.15, height = 3, units = 'in')
 ```
 
+
+
+
+
+```{r}
+library(stringr)
+enrollment.2010_2016.tidy <- enrollment.2010_2016 %>%
+  gather(key = "Population.Type", value = "Population", 4:22) %>%
+  separate(Population.Type, into=c("Semester", "Year", "Gender"))
+
+enrollment.2010_2016.tidyr <- enrollment.2010_2016.tidy %>%
+  filter(!(Gender == "All")) %>%
+  group_by(School, Major, Level, Year) %>%
+  mutate(Population.Pct = Population / sum(Population))
+
+```
 
 We'll start plotting the ratios of STEM fields at UT
 
-## Gender Ratio in STEM Fields at UT
+## Gender Ratio in STEM Majors at UT
 ```{r}
-enrollment.2016.fall <- enrollment.2016.fall %>%
-  mutate(Percentage = sum(Female))
+stem_colors = c("Female" = "#754A7e", "Male" = "#2FBEBD", "Nonbinary" = "#58595B")
+text_scaling = 1.25
+
+enrollment.2010_2016.plot <- enrollment.2010_2016.tidyr %>%
+    ggplot(data = ., aes(x = Major, y = Population, group = Major, color = Gender)) +
+  scale_color_manual(values = stem_colors) +
+  geom_jitter(
+    aes(size = )
+  )+
+  geom_line(
+    size = 2,
+    alpha = 1
+  ) +
+  ylab('# of students') +
+  xlab('Major') +
+  scale_y_continuous(breaks = seq(0,600, by = 150), limits = c(0,600), expand = c(0, 0))+#scale_y_continuous(breaks = seq(0,600, by = 200), limits = c(0,600), expand = c(0, 0))+
+  #scale_x_continuous(breaks = seq(0,12, by = 3), limits = c(0,12.5), expand = c(0, 0))+
+  #scale_size(guide="none")+
+  theme(
+    panel.background = element_blank(),
+    panel.border = element_rect(color="black", size = 1, fill = NA),
+    axis.ticks.length = unit(-0.3, "lines"),
+    axis.text.y = element_text(color="black", size = 9*text_scaling, margin = margin(l = -7, r = 6, unit = "pt")),
+    axis.text.x = element_text(color="black", size = 9*text_scaling, margin = margin(t = 6, b = -7, unit = "pt")),
+    axis.title.y = element_text(color="black", size = 10*text_scaling, margin = margin(l = -1, r = 8, unit = "pt"), angle = 90),
+    axis.title.x = element_text(color="black", size = 10*text_scaling, margin = margin(t = 8, b = -1, unit = "pt")),
+    axis.ticks.y = element_line(color="black", size = 1),
+    axis.ticks.x = element_line(color="black", size = 1),
+    plot.margin = margin(t = 10, r = 12, b = 7, l = 7, unit = "pt"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    strip.text = element_text(color="black", size = 10*text_scaling),
+    strip.background = element_blank(),
+    legend.position = "bottom",
+    legend.text = element_text(color="black", size = 10*text_scaling),
+    legend.key.height = unit(12, "pt"),
+    legend.key.width = unit(16, "pt"),
+    legend.margin = margin(0, unit = "pt")
+  )
+enrollment.2010_2016.plot
+#ggsave(plot = enrollment.2010_2016.plot, filename = 'plots/enrollment.2010_2016.plot.svg', width = 4.15, height = 3, units = 'in')
 ```
 
+# Investigate numbers by origin
+
+```{r}
+enrollment.2016.fall <- read_csv('data/stem_enrollment_female_fall_2016.csv')
+
+enrollment.2016.fall.tidy <- enrollment.2016.fall %>%
+  gather(key = "Race", value = "Population", Hispanic:White) %>%
+  mutate(Population.pct = Population / Total) %>%
+  select(-Total)
+```
+
+```{r}
+enrollment.2016.fall.tidy %>%
+  select(Race, Population) %>%
+  group_by(Race) %>%
+  summarise(Population = sum(Population)) %>%
+  mutate(Population.pct = Population / sum(Population))
+```
+
+
+
+```{r}
+# Overall Race plot
+enrollment.2016.fall.plot <- enrollment.2016.fall.tidy %>%
+  select(Race, Population) %>%
+  group_by(Race) %>%
+  summarise(Population = sum(Population)) %>%
+  mutate(Population.pct = Population / sum(Population)) %>%
+    ggplot(data = ., aes(x = Race, y = Population, group = Race, fill = Race)) +
+  scale_fill_brewer(palette = "Set2") +
+  geom_bar(
+    stat = "identity",
+    size = 2,
+    alpha = 1
+  ) +
+  ylab('female undergraduates in STEM at Tennessee') +
+  xlab('Race') +
+  scale_y_continuous(breaks = c(200,3600), limits = c(0,4000), expand = c(0, 0))+#scale_y_continuous(breaks = seq(0,600, by = 200), limits = c(0,600), expand = c(0, 0))+
+  #scale_x_continuous(breaks = seq(0,12, by = 3), limits = c(0,12.5), expand = c(0, 0))+
+  #scale_size(guide="none")+
+  coord_flip()+
+  theme(
+    panel.background = element_blank(),
+    panel.border = element_rect(color="black", size = 1, fill = NA),
+    axis.ticks.length = unit(-0.3, "lines"),
+    axis.text.y = element_text(color="black", size = 9*text_scaling, margin = margin(l = -7, r = 6, unit = "pt")),
+    axis.text.x = element_text(color="black", size = 9*text_scaling, margin = margin(t = 6, b = -7, unit = "pt")),
+    axis.title.y = element_text(color="black", size = 10*text_scaling, margin = margin(l = -1, r = 8, unit = "pt"), angle = 90),
+    axis.title.x = element_text(color="black", size = 10*text_scaling, margin = margin(t = 8, b = -1, unit = "pt")),
+    axis.ticks.y = element_line(color="black", size = 1),
+    axis.ticks.x = element_line(color="black", size = 1),
+    plot.margin = margin(t = 10, r = 12, b = 7, l = 7, unit = "pt"),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    strip.text = element_text(color="black", size = 10*text_scaling),
+    strip.background = element_blank(),
+    legend.position = "none"#,
+    # legend.text = element_text(color="black", size = 10*text_scaling),
+    # legend.key.height = unit(12, "pt"),
+    # legend.key.width = unit(16, "pt"),
+    # legend.margin = margin(0, unit = "pt")
+  )
+enrollment.2016.fall.plot 
+```
+
+```{r}
+ggsave(plot = enrollment.2016.fall.plot, filename = 'plots/enrollment.2016.fall.plot.svg', width = 4.15, height = 3, units = 'in')
+```
+
+```{r}
+# WoC in STEM fields
+enrollment.2016.fall.woc.stem.plot <- enrollment.2016.fall.tidy %>%
+  select(Major,Race, Population.pct) %>%
+  filter(!(Race == "White")) %>%
+  group_by(Major) %>%
+    ggplot(data = ., aes(x = Major, y = Population.pct*100, group = Race, color = Race)) +
+  scale_color_brewer(palette = "Set2") +
+  geom_jitter(
+    size = 3,
+    alpha = 1
+  ) +
+  ylab('Percentage') +
+  xlab('Major') +
+  scale_y_continuous(breaks = seq(0,20, by = 5), limits = c(0,20), expand = c(0, 0))+#scale_y_continuous(breaks = seq(0,600, by = 200), limits = c(0,600), expand = c(0, 0))+
+  #scale_x_continuous(breaks = seq(0,12, by = 3), limits = c(0,12.5), expand = c(0, 0))+
+  #scale_size(guide="none")+
+  guides(col = guide_legend(nrow = 2)) +
+  theme(
+    panel.background = element_blank(),
+    panel.border = element_rect(color="black", size = 1, fill = NA),
+    axis.ticks.length = unit(-0.3, "lines"),
+    axis.text.y = element_text(color="black", size = 9*text_scaling, margin = margin(l = -7, r = 6, unit = "pt")),
+    axis.text.x = element_text(color="black", size = 6*text_scaling, angle = 90, margin = margin(t = 6, b = -7, unit = "pt")),
+    axis.title.y = element_text(color="black", size = 10*text_scaling, margin = margin(l = -1, r = 8, unit = "pt"), angle = 90),
+    axis.title.x = element_text(color="black", size = 10*text_scaling, margin = margin(t = 8, b = -1, unit = "pt")),
+    axis.ticks.y = element_line(color="black", size = 1),
+    axis.ticks.x = element_line(color="black", size = 1),
+    plot.margin = margin(t = 10, r = 12, b = 7, l = 7, unit = "pt"),
+    panel.grid.major.x = element_line(color="#eeeeee", size = 1),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    strip.text = element_text(color="black", size = 10*text_scaling),
+    strip.background = element_blank(),
+    legend.position = "bottom",
+    legend.text = element_text(color="black", size = 10*text_scaling),
+    legend.key.height = unit(12, "pt"),
+    legend.key.width = unit(16, "pt"),
+    legend.margin = margin(0, unit = "pt")
+  )
+enrollment.2016.fall.woc.stem.plot 
+```
+
+```{r}
+ggsave(plot = enrollment.2016.fall.woc.stem.plot, filename = 'plots/enrollment.2016.fall.woc.stem.plot.svg', width = 4.15, height = 5, units = 'in')
+```
 
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
