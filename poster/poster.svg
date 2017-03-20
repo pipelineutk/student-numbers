@@ -24,16 +24,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.3535534"
-     inkscape:cx="379.06132"
-     inkscape:cy="1916.9634"
+     inkscape:zoom="0.25000001"
+     inkscape:cx="517.60505"
+     inkscape:cy="1878.4037"
      inkscape:document-units="px"
-     inkscape:current-layer="layer9"
+     inkscape:current-layer="layer7"
      showgrid="false"
      units="in"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="1912"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showguides="true"
@@ -1049,7 +1049,7 @@
     <path
        inkscape:connector-curvature="0"
        d="m 1932.0177,3210.6573 a 24.824928,24.824928 0 0 1 -38.0649,22.2788 18.077641,18.077641 0 0 0 12.3488,-3.8192 8.9115127,8.9115127 0 0 1 -7.3838,-5.9835 8.9115127,8.9115127 0 0 0 3.9465,-0.2546 8.9115127,8.9115127 0 0 1 -7.2566,-8.4022 8.9115127,8.9115127 0 0 0 3.5647,0.6365 8.9115127,8.9115127 0 0 1 -2.2916,-11.4577 24.824928,24.824928 0 0 0 17.9504,9.1661 8.5295908,8.5295908 0 0 1 14.7677,-7.8931 14.894957,14.894957 0 0 0 5.4741,-2.1642 8.2749758,8.2749758 0 0 1 -3.9464,4.8377 14.894957,14.894957 0 0 0 4.965,-1.4004 8.2749758,8.2749758 0 0 1 -4.0739,4.4558 z"
-       style="fill:#3ba9ee"
+       style="fill:#3ba9ee;stroke:#3ba9ee"
        id="path10443" />
     <g
        inkscape:label="Layer 1"
@@ -1100,17 +1100,17 @@
       <flowRoot
          xml:space="preserve"
          id="flowRoot9124-9"
-         style="font-style:normal;font-weight:normal;font-size:70px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         transform="translate(-1312.6986,-1616.7203)"><flowRegion
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:70.00025177px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         transform="translate(-1307.4523,-1641.0946)"><flowRegion
            id="flowRegion9126-7"><rect
              id="rect9128-8"
              width="879.27332"
              height="407.05103"
              x="1283.7628"
              y="1700.4067"
-             style="fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /></flowRegion><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:70.00025177px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /></flowRegion><flowPara
            id="flowPara17315"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.47363281px;font-family:'Source Sans Pro Black';-inkscape-font-specification:'Source Sans Pro Black, ';text-align:justify;text-anchor:start">Women at Tennessee are Less Likely to be enrolled in a STEM program</flowPara></flowRoot>    </g>
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:70.00025177px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;writing-mode:lr-tb;text-anchor:start">Women at Tennessee are Less Likely to be enrolled in a STEM program</flowPara></flowRoot>    </g>
     <flowRoot
        xml:space="preserve"
        id="flowRoot31168"
@@ -1135,19 +1135,18 @@
            id="rect9069-4-8-0"
            style="opacity:1;fill:#2fbebd;fill-opacity:1;stroke:#ffffff;stroke-width:5.53601074;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         <flowRoot
-           transform="translate(-1312.6986,-1616.7203)"
-           style="font-style:normal;font-weight:normal;font-size:70px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="translate(-1320.3253,-1626.746)"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:64.25842285px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            id="flowRoot9124-9-6"
            xml:space="preserve"><flowRegion
              id="flowRegion9126-7-1"><rect
-               style="fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+               style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:64.25842285px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                y="1700.4067"
                x="1283.7628"
                height="236.76622"
                width="895.33789"
                id="rect9128-8-0" /></flowRegion><flowPara
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.47363281px;font-family:'Source Sans Pro Black';-inkscape-font-specification:'Source Sans Pro Black, ';text-align:justify;text-anchor:start"
-             id="flowPara17315-08">Women of Color at Tennessee are Numerically Underrepresented in STEM</flowPara></flowRoot>      </g>
+             id="flowPara5731">Women of Color at Tennessee are numerically underrepresented in STEM</flowPara></flowRoot>      </g>
     </g>
     <g
        transform="matrix(0.62248652,0,0,0.62248652,672.62757,2280.0059)"
@@ -1163,19 +1162,18 @@
            id="rect9069-4-8-0-0"
            style="opacity:1;fill:#754a7e;fill-opacity:1;stroke:#ffffff;stroke-width:5.53601074;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         <flowRoot
-           transform="translate(-1312.6986,-1616.7203)"
-           style="font-style:normal;font-weight:normal;font-size:70px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="translate(-1312.8102,-1602.8522)"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:76.30686951px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:justify;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            id="flowRoot9124-9-6-5"
            xml:space="preserve"><flowRegion
              id="flowRegion9126-7-1-7"><rect
-               style="fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+               style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:76.30686951px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:justify;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                y="1700.4067"
                x="1283.7628"
                height="407.05103"
                width="879.27332"
                id="rect9128-8-0-2" /></flowRegion><flowPara
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.47363281px;font-family:'Source Sans Pro Black';-inkscape-font-specification:'Source Sans Pro Black, ';text-align:justify;text-anchor:start"
-             id="flowPara17315-08-3">But participate in STEM Fields at Varying Rates</flowPara></flowRoot>      </g>
+             id="flowPara5729">But participate in STEM fields at varying rates</flowPara></flowRoot>      </g>
     </g>
     <g
        transform="matrix(0,-0.68246875,0.68246875,0,-39.594059,2935.6857)"
@@ -1191,17 +1189,17 @@
       <flowRoot
          xml:space="preserve"
          id="flowRoot9124-9-0"
-         style="font-style:normal;font-weight:normal;font-size:70px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         transform="translate(-1312.6986,-1616.7203)"><flowRegion
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:69.99954224px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         transform="translate(-1310.7655,-1634.3422)"><flowRegion
            id="flowRegion9126-7-5"><rect
              id="rect9128-8-1"
              width="511.09338"
              height="267.96078"
              x="1283.7628"
              y="1700.4067"
-             style="fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /></flowRegion><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:69.99954224px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /></flowRegion><flowPara
            id="flowPara17315-2"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.47363281px;font-family:'Source Sans Pro Black';-inkscape-font-specification:'Source Sans Pro Black, ';text-align:justify;text-anchor:start">How does Tennessee compare?</flowPara></flowRoot>    </g>
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:69.99954224px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:center;writing-mode:lr-tb;text-anchor:middle">How does Tennessee compare?</flowPara></flowRoot>    </g>
     <g
        transform="matrix(0.9863489,0,0,0.9863489,299.06541,2523.7935)"
        id="layer1-7-9-0"
@@ -1209,53 +1207,54 @@
       <g
          id="g18357-4">
         <rect
-           y="58.878803"
-           x="-60.901691"
-           height="400"
-           width="944.66052"
+           y="58.698074"
+           x="-61.08242"
+           height="400.36145"
+           width="824.58392"
            id="rect9069-4-8-0-6"
-           style="opacity:1;fill:#2fbebd;fill-opacity:1;stroke:#ffffff;stroke-width:5.53601074;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+           style="opacity:1;fill:#ff8200;fill-opacity:1;stroke:#ffffff;stroke-width:5.17455006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         <flowRoot
            transform="translate(-1312.6986,-1616.7203)"
-           style="font-style:normal;font-weight:normal;font-size:70px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:65.8996048px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            id="flowRoot9124-9-6-6"
            xml:space="preserve"><flowRegion
              id="flowRegion9126-7-1-79"><rect
-               style="fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+               style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:65.8996048px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                y="1700.4067"
                x="1283.7628"
-               height="407.05103"
-               width="879.27332"
+               height="404.18356"
+               width="778.90845"
                id="rect9128-8-0-7" /></flowRegion><flowPara
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.47363281px;font-family:'Source Sans Pro Black';-inkscape-font-specification:'Source Sans Pro Black, ';text-align:justify;text-anchor:start"
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:65.8996048px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;writing-mode:lr-tb;text-anchor:start"
              id="flowPara17315-08-5">2013-2016 STEM Enrollment of Women and Minorities remained Stable at Tennessee</flowPara></flowRoot>      </g>
     </g>
     <g
-       transform="matrix(0.9863489,0,0,0.9863489,1272.188,2523.7935)"
+       transform="matrix(0.9863489,0,0,0.9863489,1218.188,2523.7935)"
        id="layer1-7-9-0-9"
        inkscape:label="Layer 1">
       <g
-         id="g18357-4-5">
+         id="g18357-4-5"
+         transform="translate(0,-3.7197666e-5)">
         <rect
-           y="58.878803"
-           x="-60.901691"
-           height="400"
-           width="944.66052"
+           y="55.83691"
+           x="-135.24191"
+           height="406.08377"
+           width="1081.8707"
            id="rect9069-4-8-0-6-6"
-           style="opacity:1;fill:#2fbebd;fill-opacity:1;stroke:#ffffff;stroke-width:5.53601074;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+           style="opacity:1;fill:#58595b;fill-opacity:1;stroke:#ffffff;stroke-width:5.96931553;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         <flowRoot
-           transform="translate(-1312.6986,-1616.7203)"
-           style="font-style:normal;font-weight:normal;font-size:70px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="translate(-1386.2715,-1616.7203)"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:65.8996048px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            id="flowRoot9124-9-6-6-3"
            xml:space="preserve"><flowRegion
              id="flowRegion9126-7-1-79-4"><rect
-               style="fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+               style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:65.8996048px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
                y="1700.4067"
                x="1283.7628"
-               height="407.05103"
-               width="879.27332"
+               height="366.905"
+               width="1047.8"
                id="rect9128-8-0-7-8" /></flowRegion><flowPara
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.47363281px;font-family:'Source Sans Pro Black';-inkscape-font-specification:'Source Sans Pro Black, ';text-align:justify;text-anchor:start"
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:65.8996048px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;writing-mode:lr-tb;text-anchor:start"
              id="flowPara17315-08-5-8">2005 - 2015 in U. California System, STEM Enrollment of Minorities Increased 9% and Enrollment of Women remained Stable</flowPara></flowRoot>      </g>
     </g>
     <path
@@ -2072,9 +2071,14 @@
              id="text252"
              lengthAdjust="spacingAndGlyphs"
              textLength="66.49px"
-             style="font-size:12.5px;font-family:Arial"
+             style="font-size:12.49991134px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;"
              y="184.2"
-             x="20.332005">undergraduates in STEM majors at Tennessee</text>
+             x="20.332005"
+             sodipodi:linespacing="125%">
+            <tspan
+               sodipodi:role="line"
+               id="tspan5727">undergraduates in STEM majors at Tennessee</tspan>
+          </text>
         </g>
         <g
            transform="matrix(0,1,-1,0,173.25975,5.5735443)"
@@ -2380,9 +2384,9 @@
            style="opacity:1;fill:#ff8200;fill-opacity:1;stroke:#ffffff;stroke-width:7;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         <flowRoot
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:78.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:90px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            id="flowRoot28163"
-           transform="translate(-1.0795499,-18.8684)"><flowRegion
+           transform="translate(-1.0798703,3.6215995)"><flowRegion
              id="flowRegion28165"><use
                x="0"
                y="0"
@@ -2390,10 +2394,10 @@
                id="use28167"
                width="100%"
                height="100%" /></flowRegion><flowPara
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:75px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';text-align:center;text-anchor:middle;fill:#ffffff"
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:90px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff"
              id="flowPara28171" /><flowPara
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:87.5px;font-family:'Source Sans Pro Black';-inkscape-font-specification:'Source Sans Pro Black, ';text-align:center;text-anchor:middle;fill:#ffffff"
-             id="flowPara28177">Nationally, women and men enroll in STEM programs as similar rates</flowPara></flowRoot>      </g>
+             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:90px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Heavy';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff"
+             id="flowPara28177">Nationally, women and men enroll in STEM programs at similar rates</flowPara></flowRoot>      </g>
     </g>
     <flowRoot
        xml:space="preserve"
