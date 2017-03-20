@@ -44,12 +44,12 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="2.7261949"
-     inkscape:cx="141.41312"
+     inkscape:cx="74.286591"
      inkscape:cy="138.12352"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2" />
+     inkscape:current-layer="g126" />
   <defs
      id="defs4">
     <style
@@ -525,12 +525,12 @@
        id="g122"
        transform="translate(1.9565622,0.53500004)">
       <text
-         x="87.300003"
+         x="65.620316"
          y="127.13"
          style="font-size:7.5px;font-family:Arial"
          textLength="55.57px"
          lengthAdjust="spacingAndGlyphs"
-         id="text124">Bus-Economics</text>
+         id="text124">Business - Economics</text>
     </g>
     <g
        style=""
@@ -538,12 +538,12 @@
        id="g126"
        transform="translate(2.8917047,0.53500004)">
       <text
-         x="80.629997"
+         x="80.109978"
          y="118.72"
          style="font-size:7.5px;font-family:Arial"
          textLength="62.24px"
          lengthAdjust="spacingAndGlyphs"
-         id="text128">Economics - A&amp;S</text>
+         id="text128">A&amp;S - Economics</text>
     </g>
     <g
        style=""
@@ -577,12 +577,12 @@
        id="g138"
        transform="translate(2.3799478,0.53500004)">
       <text
-         x="86.839996"
+         x="4.4352112"
          y="93.510002"
          style="font-size:7.5px;font-family:Arial"
          textLength="56.03px"
          lengthAdjust="spacingAndGlyphs"
-         id="text140">Kinesiology etc.</text>
+         id="text140">Kinesiology, Recreation, &amp; Sport Studies</text>
     </g>
     <g
        style=""
@@ -904,12 +904,12 @@
        id="g250"
        transform="translate(0.53500004,4.535)">
       <text
-         x="8.509491"
+         x="20.332005"
          y="184.2"
          style="font-size:12.5px;font-family:Arial"
          textLength="66.49px"
          lengthAdjust="spacingAndGlyphs"
-         id="text252"># of undergraduates in STEM majors at Tennessee</text>
+         id="text252">undergraduates in STEM majors at Tennessee</text>
     </g>
     <g
        style=""
